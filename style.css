@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url('fonts/Comic\ Sans\ MS.woff2') format('woff2'), /* Modern Browsers */
+       url('fonts/Comic\ Sans\ MS.woff') format('woff'); /* Older Browsers */
+}
+
+@font-face {
+  font-family: 'Papyrus';
+  src: url('fonts/Papyrus.woff2') format('woff2'), /* Modern Browsers */
+       url('fonts/Papyrus.woff') format('woff'); /* Older Browsers */
+}
+
+@font-face {
+  font-family: 'Impact';
+  src: url('fonts/Impact.woff2') format('woff2'), /* Modern Browsers */
+       url('fonts/Impact.woff') format('woff'); /* Older Browsers */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 999;
+  }
+  
+  .word-box {
+    max-width: 500px; /* Adjust the value as needed */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    /* Other styling properties */
+  }
+  
+  .word {
+    background-color: #eaeaea;
+    padding: 2px 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Papyrus';
+    font-size: 14px;
+  }
+
+  .word2 {
+    background-color: blue;
+    padding: 2px 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Papyrus';
+    font-size: 14px;
+  }
+
+  .word3 {
+    background-color: #eaeaea;
+    padding: 2px 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Papyrus';
+  }
+
+  .word4 {
+    background-color: #eaeaea;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Papyrus';
+  }
+  
+  .drop-zone {
+    border: 2px dashed black;
+    min-height: 50px;
+    width: 300px; /* Adjust the width as needed */
+    height: 100px; /* Set the height for visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .display-button {
+    background-color: #eaeaea;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Add margin-top for spacing */
+    font-family: 'Comic Sans MS';
+  }
+
+  .title-container {
+    text-align: center; /* Center-align the content */
+  }
+
+  @keyframes rainbow { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 25%}
+    100%{background-position:0% 50%}
+  }
+
+  .rainbow-text {
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    text-align: center;
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    animation: rainbow 8s ease infinite;
+  }
+  
+  .title {
+    font-size: 3vh; /* Adjust the font size as needed */
+    margin-bottom: 5vh; /* Add some bottom margin for separation */
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    background-color: #e1c4ff;
+  }
+
+  .rotate {
+    animation: rotation 8s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }

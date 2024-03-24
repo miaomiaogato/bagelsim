@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sophia Bagel y Simualrtor
+  </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+</head>
+<body>
+    <div id="thing">
+    </div>
+    <div class="container">
+        <img src="title.png" style="width: 75vh; height: auto;">
+        <div class="title-container">
+            <h1 class="title rainbow-text" style="font-family: 'Impact'"><b>(real)</b></h1>
+          </div>
+        <div class="word-box" id="word-box">
+        </div>
+        <div class="drop-zone" id="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <button class="display-button" onclick="displaySentence()"><b>Play sentence</b></button>
+        <button class="display-button" onclick="clearSentence()"><b>Clear Sentence</b></button>
+    </div>
+
+    <img src="star.png" style="position: absolute; top: -15vh; left: -15vh; width: 80vh; height: 80vh;">
+    <img src="bagel.png" class="rotate" style="position: absolute; bottom: 10vh; right: 10vh; width: 20vh; height: 20vh;">
+    <p style="position: absolute; left: 10vh; bottom: 10vh; font-size: 2vh; font-style: italic; font-family: 'Comic Sans MS';"><b>Made by meow miao</b></p>
+    <img src="gaturro.webp" style="position: absolute; bottom: 10vh; left: 26vh; width: 10vh; height: 10vh;">
+
+  <script src="script.js"></script>
+</body>
+</html>
